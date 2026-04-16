@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ReservaEsport</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <section style="height: 520px;">
+        <div class="login-box">
+            <form action="procesar_registro.php" method="POST">
+                <h2>Crear Cuenta</h2>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="usuario" required>
+                    <label>Usuario</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label>Correo Electrónico</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="contraseña" required>
+                    <label>Contraseña</label>
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+                <div class="register-link">
+                    <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
